@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iphone_xr_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="background tg" translatesAutoresizingMaskIntoConstraints="NO" id="7o1-Ik-rOz">
+                                <rect key="frame" x="-401" y="-498" width="1080" height="1672"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nrJ-1h-OJb">
+                                <rect key="frame" x="215" y="49" width="90" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="hand.point.up.left" catalog="system" title="eng">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="26"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="langEn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="od1-zf-yLX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MX8-8G-FPU">
+                                <rect key="frame" x="16" y="49" width="89" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="hand.point.up.left" catalog="system" title="uzb">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="26"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="langUz:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8nn-tD-w6F"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lPp-pQ-sW4">
+                                <rect key="frame" x="117" y="49" width="82" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="hand.point.up.left" catalog="system" title="rus">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="26"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="langRu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5T0-4S-ihv"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Zt-iN-hef">
+                                <rect key="frame" x="91" y="531" width="229" height="21"/>
+                                <string key="text">Добро пожаловать!  Вы можете заказать любую вкусную тогу от  Yewo через это  приложение. Заказ  прибудет к месту назначения  в короткие сроки</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="del icon" translatesAutoresizingMaskIntoConstraints="NO" id="kDV-Hf-7cO">
+                                <rect key="frame" x="82" y="228" width="229" height="220"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7Zt-iN-hef" firstAttribute="top" secondItem="kDV-Hf-7cO" secondAttribute="bottom" constant="70" id="5lJ-kk-Bou"/>
+                            <constraint firstItem="7Zt-iN-hef" firstAttribute="top" secondItem="kDV-Hf-7cO" secondAttribute="bottom" constant="70" id="bRo-75-OfY"/>
+                            <constraint firstItem="kDV-Hf-7cO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lp4-KD-NyW"/>
+                            <constraint firstItem="7Zt-iN-hef" firstAttribute="top" secondItem="kDV-Hf-7cO" secondAttribute="bottom" constant="70" id="pAe-s4-uJn"/>
+                            <constraint firstItem="kDV-Hf-7cO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tbd-1V-4Vz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="7Zt-iN-hef" id="2V7-lX-4QQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="14.503816793893129" y="-34.507042253521128"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background tg" width="1080" height="1672"/>
+        <image name="del icon" width="229" height="220"/>
+        <image name="hand.point.up.left" catalog="system" width="119" height="128"/>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
